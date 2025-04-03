@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* Header containing the navbar */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height:13vh;
+  }
+  
+  /* Container for max-width and padding */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Main navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  /* Logo section */
+  .logo {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: var(--foreground);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary);
+    background-color: rgba(0,0,0,0.05);
+    text-decoration:underline;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Consider adding a mobile menu instead */
+    }
+    
+    .logo {
+      font-size: 20px;
+    }
+    
+    header {
+      padding: 12px 0;
+    }
+  }
